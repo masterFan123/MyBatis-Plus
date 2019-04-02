@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.JpMallCouponMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.example.demo.entity.JpMallCoupon">
+		<id column="id" property="id" />
+		<result column="satisfy_money" property="satisfyMoney" />
+		<result column="relief_money" property="reliefMoney" />
+		<result column="restrict_type_id" property="restrictTypeId" />
+		<result column="restrict_content" property="restrictContent" />
+		<result column="start_time" property="startTime" />
+		<result column="end_time" property="endTime" />
+		<result column="limit_number" property="limitNumber" />
+		<result column="picks" property="picks" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, satisfy_money AS satisfyMoney, relief_money AS reliefMoney, restrict_type_id AS restrictTypeId, restrict_content AS restrictContent, start_time AS startTime, end_time AS endTime, limit_number AS limitNumber, picks
+    </sql>
+
+</mapper>
